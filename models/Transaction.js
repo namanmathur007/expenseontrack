@@ -4,13 +4,13 @@ const TransactionSchema = new mongoose.Schema({
   text: {
     type: String,
     trim: true,
-    required: [true, 'Please add some text']
+    required: [true, 'Please add text']
   },
   amount: {
     type: Number,
-    required: [true, 'Please add a positive or negative number']
+    required: [true, 'Please add a numbernumber']
   },
-  createdAt: {
+  datecreated: {
     type: Date,
     default: Date.now
   }

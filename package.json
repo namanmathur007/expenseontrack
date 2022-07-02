@@ -6,15 +6,15 @@
   "engines": {
     "node": "14.17.6",
     "npm": "6.14.15"
-    },
+  },
   "scripts": {
     "start": "node server",
     "server": "nodemon server",
     "dev": "webpack --config=Scripts/config/webpack.dev.js --watch",
     "build": "webpack --config=Scripts/config/webpack.prod.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-prebuild": "npm install --dev"
   },
- 
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -23,7 +23,8 @@
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
     "mongoose": "^6.4.1",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "webpack": "^5.73.0"
   },
   "devDependencies": {
     "concurrently": "^7.2.2",
